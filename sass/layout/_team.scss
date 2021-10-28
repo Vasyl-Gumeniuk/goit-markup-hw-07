@@ -1,0 +1,84 @@
+.team-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
+.team-names {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  height: 19px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.team-text {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-bottom: 0;
+}
+.team-text.first {
+  min-width: 130px;
+  text-align: center;
+}
+.team-text.second {
+  min-width: 147px;
+  text-align: center;
+}
+.team-text.third {
+  min-width: 76px;
+  margin-left: 97px;
+  margin-right: 97px;
+}
+.team-text.fourth {
+  min-width: 87px;
+  text-align: center;
+}
+
+.team-names.first {
+  min-width: 151px;
+  text-align: center;
+}
+.team-names.second {
+  min-width: 109px;
+  text-align: center;
+}
+.team-names.third {
+  min-width: 137px;
+  margin-left: 67px;
+  margin-right: 66px;
+}
+.team-names.fourth {
+  min-width: 134px;
+  text-align: center;
+}
+.team {
+  background-color: var(--background-ourteam);
+}
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.team-item {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-basis: calc(100 / 3);
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-item:first-child {
+  margin-left: 0;
+}

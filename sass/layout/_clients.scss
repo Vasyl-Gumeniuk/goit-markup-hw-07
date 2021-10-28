@@ -1,0 +1,23 @@
+.clients-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+}
+.clients-item {
+  margin-right: 30px;
+}
+.clients-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  background-color: var(--secondary-text-color);
+}
