@@ -3,9 +3,9 @@
 }
 .socials {
   margin-right: 10px;
-}
-.socials:last-child {
-  margin: 0;
+  &:last-child {
+    margin: 0;
+  }
 }
 .social-link {
   display: inline-flex;

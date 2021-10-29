@@ -2,8 +2,6 @@
   max-width: 1600px;
   border-bottom: 1px solid #ececec;
 }
-
-/* Site nav */
 .header-container {
   display: flex;
   align-items: center;
@@ -19,18 +17,20 @@
 }
 .header-item {
   margin-right: 50px;
+  &:first-child {
+    margin-left: 93px;
+  }
 }
-.header-item:first-child {
-  margin-left: 93px;
-}
+
 .contact-item {
   margin-left: 50px;
   padding-top: 32px;
   padding-bottom: 32px;
+  &:first-child {
+    margin-left: 0;
+  }
 }
-.contact-item:first-child {
-  margin-left: 0;
-}
+
 .contact {
   display: flex;
   margin-left: auto;
@@ -40,20 +40,21 @@
   position: relative;
   padding: 32px 0px;
   color: var(--accent-color);
+  &::after {
+    position: absolute;
+    bottom: -3px;
+    left: 0px;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    opacity: 1;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-.site-nav .link.current::after {
-  position: absolute;
-  bottom: -3px;
-  left: 0px;
-  content: "";
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-  opacity: 1;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .site-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
@@ -63,14 +64,13 @@
   color: var(--title-text-color);
   text-decoration: none;
   display: block;
-
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .contact .link {
@@ -90,15 +90,16 @@
 .contact-icon {
   margin-right: 10px;
   fill: var(--primary-text-color);
+  .contact .link:hover &,
+  .contact .link:focus & {
+    fill: var(--accent-color);
+  }
 }
 .contact .link:hover,
 .contact .link:focus {
   color: var(--accent-color);
 }
-.contact .link:hover .contact-icon,
-.contact .link:focus .contact-icon {
-  fill: var(--accent-color);
-}
+
 .nav-logo {
   font-family: "Raleway", sans-serif;
   font-weight: bold;

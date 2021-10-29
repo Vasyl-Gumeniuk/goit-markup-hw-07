@@ -29,12 +29,15 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address-list .address-link:hover,
-.address-list .address-link:focus {
-  color: var(--accent-color);
+.address-list > .list-item {
+  margin-right: 0px;
 }
 .address-link {
   display: block;
+  .address-list &:hover,
+  .address-list &:focus {
+    color: var(--accent-color);
+  }
 }
 .footer-container {
   display: flex;

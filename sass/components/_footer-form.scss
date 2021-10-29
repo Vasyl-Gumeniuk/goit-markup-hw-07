@@ -17,6 +17,11 @@
   align-items: center;
   justify-content: center;
 }
+.footer-form-icon {
+  height: 24px;
+  width: 24px;
+  margin-left: 10px;
+}
 .form-title {
   display: block;
   font-style: normal;
@@ -50,12 +55,13 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-.footer-form-input:hover,
-.footer-form-input:focus {
-  border: 1px solid var(--accent-color);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .footer-form-button {
   display: flex;
   align-items: center;
@@ -76,9 +82,4 @@
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-form-icon {
-  height: 24px;
-  width: 24px;
-  margin-left: 10px;
 }

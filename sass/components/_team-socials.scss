@@ -16,19 +16,19 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-link:hover,
-.social-link:focus {
-  background-color: var(--accent-color);
-  fill: var(--secondary-text-color);
-}
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
-  fill: var(--secondary-text-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--secondary-text-color);
+  }
 }
 .social-icon {
   fill: var(--fill-icon-social);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .social-link:hover &,
+  .social-link:focus & {
+    fill: var(--secondary-text-color);
+  }
 }
