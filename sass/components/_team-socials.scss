@@ -2,10 +2,13 @@
   display: flex;
   padding: 16px 32px 30px 32px;
 }
-.socials {
+.team-socials__socials {
   margin-right: 10px;
+  &:nth-child(4) {
+    margin-right: 0px;
+  }
 }
-.social-link {
+.team-socials__social-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -22,13 +25,13 @@
     fill: var(--secondary-text-color);
   }
 }
-.social-icon {
+.team-socials__social-icon {
   fill: var(--fill-icon-social);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  .social-link:hover &,
-  .social-link:focus & {
+  .team-socials__social-link:hover &,
+  .team-socials__social-link:focus & {
     fill: var(--secondary-text-color);
   }
 }

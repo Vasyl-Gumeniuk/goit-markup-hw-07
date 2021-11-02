@@ -10,10 +10,13 @@
 .clients-list {
   display: flex;
 }
-.clients-item {
+.clients-list__clients-item {
   margin-right: 30px;
+  &:nth-child(6) {
+    margin-right: 0px;
+  }
 }
-.clients-thumb {
+.clients-list__clients-thumb {
   display: flex;
   align-items: center;
   justify-content: center;
