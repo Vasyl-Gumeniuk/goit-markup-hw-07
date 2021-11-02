@@ -306,12 +306,12 @@ img {
   margin-bottom: 50px;
 }
 
-.work-examples__examples {
+.examples {
   display: flex;
   justify-content: space-between;
 }
 
-.work-examples__card {
+.examples__card {
   position: relative;
 }
 
@@ -325,7 +325,7 @@ img {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.work-examples__card-title {
+.examples__card-title {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
